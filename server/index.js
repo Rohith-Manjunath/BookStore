@@ -11,7 +11,12 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173/", "http://localhost:5173"],
+    origin: [
+      "http://localhost:5173/",
+      "http://localhost:5173",
+      "https://taupe-douhua-63959f.netlify.app",
+      "https://taupe-douhua-63959f.netlify.app/",
+    ],
     credentials: true,
   })
 );
